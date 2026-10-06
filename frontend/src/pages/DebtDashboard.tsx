@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import DebtForm from '../components/DebtForm';
 import DebtList from '../components/DebtList';
 import SummaryCard from '../components/SummaryCard';

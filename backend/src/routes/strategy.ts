@@ -11,7 +11,8 @@ router.post('/calculate', async (req: Request, res: Response, next: NextFunction
     const { availableAmount, strategy } = req.body;
 
     if (!availableAmount || !strategy) {
-      return res.status(400).json({ error: 'availableAmount and strategy required' });
+      res.status(400).json({ error: 'availableAmount and strategy required' });
+      return;
     }
 
     const debts = await Debt.findAll();
@@ -24,7 +25,7 @@ router.post('/calculate', async (req: Request, res: Response, next: NextFunction
 });
 
 // GET financial overview
-router.get('/overview', async (req: Request, res: Response, next: NextFunction) => {
+router.get('/overview', async (_req: Request, res: Response, next: NextFunction) => {
   try {
     const debts = await Debt.findAll();
     const totalDebt = debts.reduce((sum, d) => sum + parseFloat(d.amount.toString()), 0);

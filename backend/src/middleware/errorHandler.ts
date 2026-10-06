@@ -7,9 +7,9 @@ interface DatabaseError extends Error {
 
 export function errorHandler(
   err: DatabaseError,
-  req: Request,
+  _req: Request,
   res: Response,
-  next: NextFunction
+  _next: NextFunction
 ): void {
   console.error('Error:', err);
 
