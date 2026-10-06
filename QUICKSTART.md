@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-Backend will run on `http://localhost:5000`
+Backend will run on `http://localhost:5001`
 
 ### 3. Frontend Setup
 
@@ -52,7 +52,7 @@ docker-compose up --build
 
 This will:
 - Start MySQL on port 3306
-- Start Backend API on port 5000
+- Start Backend API on port 5001
 - Start Frontend on port 5173
 
 ## Environment Variables
@@ -60,7 +60,7 @@ This will:
 ### Backend (.env)
 
 ```
-PORT=5000
+PORT=5001
 NODE_ENV=development
 DB_HOST=localhost
 DB_USER=root
@@ -81,7 +81,7 @@ npm run test:e2e
 
 **Port already in use:**
 ```bash
-lsof -i :5000  # Find process on port 5000
+lsof -i :5001  # Find process on port 5001
 kill -9 <PID>  # Kill process
 ```
 
