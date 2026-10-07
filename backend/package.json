@@ -1,7 +1,7 @@
 {
-  "name": "debt-manager-backend",
+  "name": "finance-manager-backend",
   "version": "1.0.0",
-  "description": "Debt Manager API - Backend",
+  "description": "Finance Manager API - Backend",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

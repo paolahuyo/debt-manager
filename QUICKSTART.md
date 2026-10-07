@@ -12,9 +12,9 @@
 
 ```bash
 # Using Docker (recommended)
-docker run --name debt-manager-db \
+docker run --name finance-manager-db \
   -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_DATABASE=debt_manager \
+  -e MYSQL_DATABASE=finance_manager \
   -p 3306:3306 \
   -d mysql:8.0
 ```
@@ -65,7 +65,7 @@ NODE_ENV=development
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=root
-DB_NAME=debt_manager
+DB_NAME=finance_manager
 CORS_ORIGIN=http://localhost:5173
 ```
 

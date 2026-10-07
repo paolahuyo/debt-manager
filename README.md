@@ -1,4 +1,4 @@
-# 💰 Debt Manager
+# 💰 Finance Manager
 
 A full-stack web application to help you manage, track, and eliminate debt efficiently.
 
@@ -30,7 +30,7 @@ See [QUICKSTART.md](./QUICKSTART.md) for setup instructions.
 ## Project Structure
 
 ```
-debt-manager/
+finance-manager/
 ├── backend/          # Express API
 │   ├── src/
 │   │   ├── db/      # Database initialization

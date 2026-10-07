@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Debt Manager', () => {
+test.describe('Finance Manager', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
   });
 
   test('should load the header', async ({ page }) => {
     const header = page.locator('h1');
-    await expect(header).toContainText('Debt Manager');
+    await expect(header).toContainText('Finance Manager');
   });
 
   test('should display summary cards', async ({ page }) => {

@@ -1,7 +1,7 @@
 {
-  "name": "debt-manager-frontend",
+  "name": "finance-manager-frontend",
   "version": "1.0.0",
-  "description": "Debt Manager - Frontend React",
+  "description": "Finance Manager - Frontend React",
   "type": "module",
   "scripts": {
     "dev": "vite",
